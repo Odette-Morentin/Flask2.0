@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar pendiente</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Edición de pendiente</h1>
+    <div class="container">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre"><br>
+        
+        <label for="fecha_inicio">Fecha de inicio:</label>
+        <input type="datetime-local" id="fecha_inicio"><br>
+        
+        <label for="fecha_fin">Fecha de fin:</label>
+        <input type="datetime-local" id="fecha_fin"><br>
+        
+        <label for="recordar_cada">Recordar cada:</label>
+        <input type="number" id="recordar_cada"> <br>días<br>
+        
+        <input type="button" id="boton" value="Aceptar cambios">
+    </div>
+    <div class="container">
+        <a href="/">Volver a inicio</a>
+    </div>
+</body>
+</html>

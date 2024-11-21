@@ -1,0 +1,150 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(239, 217, 187); /* Fondo de café claro */
+    color: rgb(51, 34, 17); /* Texto en café oscuro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilo para títulos */
+h1 {
+    color: rgb(102, 51, 0); /* Café intermedio */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombras sutiles */
+}
+
+/* Enlaces */
+a {
+    color: rgb(51, 34, 17); /* Texto oscuro */
+    background-color: rgb(219, 190, 152); /* Fondo suave */
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    background-color: rgb(153, 102, 51); /* Fondo más oscuro */
+    color: rgb(255, 245, 230); /* Texto claro */
+    transform: translateY(-3px); /* Movimiento */
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px;
+    text-align: center;
+    background: rgb(255, 245, 230); /* Fondo suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Estilo para botones de tipo input */
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgb(219, 190, 152); /* Fondo suave */
+    color: rgb(51, 34, 17); /* Texto oscuro */
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: rgb(153, 102, 51); /* Fondo más oscuro */
+    color: white; /* Texto claro */
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+
+/* Estilo para entradas (input) y listas desplegables (select) */
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 100px); /* Adaptar al contenedor */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(200, 180, 150); /* Bordes suaves */
+    border-radius: 5px;
+    background-color: rgb(255, 250, 240); /* Fondo claro */
+    color: rgb(51, 34, 17); /* Texto oscuro */
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: rgb(153, 102, 51); /* Enfoque en café oscuro */
+}
+
+
+/* Estilo para entradas tipo fecha */
+input[type="datetime-local"] {
+    width: calc(100% - 20px); /* Alinear con otros campos */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(200, 180, 150); /* Bordes suaves */
+    border-radius: 5px;
+    background-color: rgb(255, 250, 240); /* Fondo claro */
+    color: rgb(51, 34, 17); /* Texto oscuro */
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    appearance: none; /* Ocultar estilo predeterminado */
+}
+
+input[type="datetime-local"]:focus {
+    outline: none;
+    border-color: rgb(153, 102, 51); /* Enfoque en café oscuro */
+    box-shadow: 0 0 5px rgba(153, 102, 51, 0.5); /* Sombra en enfoque */
+}
+
+/* Ajustes específicos para navegadores */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    background-color: rgb(219, 190, 152); /* Fondo del ícono */
+    border-radius: 5px;
+    cursor: pointer;
+}
+textarea {
+    width: calc(100% - 20px); /* Ancho alineado con otros campos */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(200, 180, 150); /* Bordes suaves */
+    border-radius: 5px;
+    background-color: rgb(255, 250, 240); /* Fondo claro */
+    color: rgb(51, 34, 17); /* Texto oscuro */
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: vertical; /* Permitir solo redimensionar verticalmente */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: rgb(153, 102, 51); /* Enfoque en café oscuro */
+    box-shadow: 0 0 5px rgba(153, 102, 51, 0.5); /* Sombra en enfoque */
+}
