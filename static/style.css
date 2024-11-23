@@ -148,3 +148,12 @@ textarea:focus {
     border-color: rgb(153, 102, 51); /* Enfoque en café oscuro */
     box-shadow: 0 0 5px rgba(153, 102, 51, 0.5); /* Sombra en enfoque */
 }
+
+img {
+    max-width: 300px; /* Ajusta el ancho máximo */
+    height: auto; /* Mantén la proporción de la imagen */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
