@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import csv
 
 app = Flask(__name__)
 
@@ -14,7 +15,12 @@ def agregar():
         fecha_inicio = request.form.get('fecha_inicio')
         fecha_fin = request.form.get('fecha_fin')
         recordar_cada = request.form.get('recordar_cada')
-        descirpcion = request.form.get('descripcion')
+        descripcion = request.form.get('descripcion')
+
+        with open('db.csv',mode='a',newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            writer.writerow([nombre, fecha_inicio, fecha_fin, recordar_cada, descripcion])
+            
         return render_template('llenado.html')
     return render_template('agregar.html')
 
