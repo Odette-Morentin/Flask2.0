@@ -9,10 +9,16 @@
 <body>
     <div class="container">
         <label for="opciones">Selecciona el evento a modificar:</label><br>
-        <select name="select">
-            <option value="ejemplo1">ejemplo1</option>
-        </select><br>
-        <a href="/editar/modificar">Aceptar</a>
+        <form method="get" action="/editar/modificar">
+            <select name="id" id="opciones">
+                <!-- Iteramos sobre la lista de tareas -->
+                {% for tarea in tareas[1:] %} 
+                    <option value="{{ loop.index }}">{{ tarea[0] }}</option> <!-- Mostrar el nombre de la tarea -->
+                {% endfor %}
+
+            </select><br>
+            <button type="submit">Aceptar</button>
+        </form>
     </div>
     <div class="container">
         <a href="/">Volver a inicio</a>
